@@ -210,5 +210,49 @@ export default {
   transform:rotate(10deg);
   /* width: 60%; */
 }
+
+
+
+.ThePlaylist_Wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+}
+.ThePlaylist_CloseBtn{
+  width: 28px;
+  height: 28px;
+  margin-left: 24px;
+  margin-bottom: 12px;
+  /* background: red; */
+  background-image: 
+  linear-gradient(-45deg, 
+    transparent calc(50% - 1px), #fff calc(50% - 1px), 
+    #fff calc(50% + 1px), transparent calc(50% + 1px)
+  ), 
+  linear-gradient(45deg, 
+    transparent calc(50% - 1px), #fff calc(50% - 1px), 
+    #fff calc(50% + 1px), transparent calc(50% + 1px)
+  );
+}
+.TheIndex_Playlist_Countainer{
+  padding-left: 12px;
+  padding-right: 12px;
+  /* f */
+  display: flex;
+  /* justify-content: space-between; */
+  overflow-x: scroll;
+  /* overflow-y: visible; */
+}
+
+.TheIndex_Playlist{
+  width: 320px;
+  height: 280px;
+  margin-right: 24px;
+}
+
 }
 </style>
