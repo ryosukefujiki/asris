@@ -60,9 +60,17 @@ html {
 html,body, #__nuxt, #__layout, .default{
   width: 100%;
   height: 100%;
-  background: black;
+  /* background: black; */
+  /* background: url("/bg.png");
+  background-size: cover;
+  background-position: center; */
 }
-
+body{
+  background: black;
+  /* background: url("/bg.png");
+  background-size: cover;
+  background-position: center; */
+}
 *,
 *:before,
 *:after {

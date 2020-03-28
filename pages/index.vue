@@ -1,14 +1,21 @@
 <template>
   <div class="TheIndex">
     <v-lazy-image :src="news" alt="" class="TheIndex_Img TheIndex_Img-News"/>
-    <v-lazy-image :src="camereon" alt="" class="TheIndex_Img TheIndex_Img-Camereon"/>
+    <a @click="ThePlaylist_Clicked">
+      <v-lazy-image :src="camereon" alt="" class="TheIndex_Img TheIndex_Img-Camereon"/>
+    </a>
     <v-lazy-image :src="tv" alt="" class="TheIndex_Img TheIndex_Img-Tv"/>
     <a href="https://asilis.theshop.jp/"  class="">
       <v-lazy-image :src="shop" alt="" class="TheIndex_Img TheIndex_Img-Shop"/>
     </a>
-    <p>X軸{{this.x_value}}</p>
-    <p>Y軸{{this.y_value}}</p>
-    <p>Z軸{{this.z_value}}</p>
+    <div class="ThePlaylist_Wrapper">
+      <div class="ThePlaylist_CloseBtn" v-show="this.playlist_flag" @click="ThePlaylist_Closed"></div>
+      <div class="TheIndex_Playlist_Countainer" v-show="this.playlist_flag">
+        <iframe src="https://open.spotify.com/embed/album/6BpM79A5kpFetdC9lVRCJy" class="TheIndex_Playlist" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/artist/0EpMZDmiigjzkNNNBF3Hbp" class="TheIndex_Playlist" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/artist/2CjSAJqzNhKwUeen9d0d0D" class="TheIndex_Playlist" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -30,18 +37,30 @@ export default {
       x_value: 0,
       y_value: 0,
       z_value: 0,
+      playlist_flag: false,
     }
   },
   mounted() {
-    let self = this
-    window.addEventListener("deviceorientation", function(e){
-    // alpha, beta, gammaの値を取得
-    this.x_value = e.beta;
-    this.y_value = e.gamma;
-    this.z_value = e.alpha;
-
-    }, false);
-  }
+    // let self = this
+    // window.addEventListener("deviceorientation", function(e){
+    //   // alpha, beta, gammaの値を取得
+    //   // this.x_value = e.beta;
+    //   // this.y_value = e.gamma;
+    //   // this.z_value = e.alpha;
+    //   console.log(e.beta)
+    //   console.log(e.gamma)
+    //   console.log(e.alpha)
+    // // console.log(this.x_value)
+    // }, false);
+  },
+  methods: {
+    ThePlaylist_Clicked(){
+      this.playlist_flag = true
+    },
+    ThePlaylist_Closed(){
+      this.playlist_flag = false
+    },
+  },
 }
 </script>
 
@@ -84,6 +103,49 @@ export default {
   transform:rotate(10deg);
   /* width: 60%; */
 }
+
+.ThePlaylist_Wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+}
+.ThePlaylist_CloseBtn{
+  width: 28px;
+  height: 28px;
+  margin-left: 24px;
+  margin-bottom: 12px;
+  /* background: red; */
+  background-image: 
+  linear-gradient(-45deg, 
+    transparent calc(50% - 1px), #fff calc(50% - 1px), 
+    #fff calc(50% + 1px), transparent calc(50% + 1px)
+  ), 
+  linear-gradient(45deg, 
+    transparent calc(50% - 1px), #fff calc(50% - 1px), 
+    #fff calc(50% + 1px), transparent calc(50% + 1px)
+  );
+}
+.TheIndex_Playlist_Countainer{
+  padding-left: 12px;
+  padding-right: 12px;
+  /* f */
+  display: flex;
+  /* justify-content: space-between; */
+  overflow-x: scroll;
+  /* overflow-y: visible; */
+}
+
+.TheIndex_Playlist{
+  width: 240px;
+  height: 200px;
+  margin-right: 24px;
+}
+
+
 
 @media screen and (min-width: 481px){
 
