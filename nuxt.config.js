@@ -28,6 +28,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/mixin',
+    '~/plugins/v-lazy-image',
   ],
   /*
   ** Nuxt.js dev-modules
