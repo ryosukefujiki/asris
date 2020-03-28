@@ -6,6 +6,9 @@
     <a href="https://asilis.theshop.jp/"  class="">
       <v-lazy-image :src="shop" alt="" class="TheIndex_Img TheIndex_Img-Shop"/>
     </a>
+    <p>X軸{{this.x_value}}</p>
+    <p>Y軸{{this.y_value}}</p>
+    <p>Z軸{{this.z_value}}</p>
   </div>
 </template>
 
@@ -24,8 +27,21 @@ export default {
       news: "/news.png",
       shop: "/shop.png",
       tv: "/tv.png",
+      x_value: 0,
+      y_value: 0,
+      z_value: 0,
     }
   },
+  mounted() {
+    let self = this
+    window.addEventListener("deviceorientation", function(e){
+    // alpha, beta, gammaの値を取得
+    this.x_value = e.beta;
+    this.y_value = e.gamma;
+    this.z_value = e.alpha;
+
+    }, false);
+  }
 }
 </script>
 
@@ -63,7 +79,7 @@ export default {
 .TheIndex_Img-Tv{
   position: fixed;
   top: 36%;
-  left: -10%;
+  left: 0;
   height: 40%;
   transform:rotate(10deg);
   /* width: 60%; */
