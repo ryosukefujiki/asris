@@ -3,7 +3,9 @@
     <v-lazy-image :src="news" alt="" class="TheIndex_Img TheIndex_Img-News"/>
     <v-lazy-image :src="camereon" alt="" class="TheIndex_Img TheIndex_Img-Camereon"/>
     <v-lazy-image :src="tv" alt="" class="TheIndex_Img TheIndex_Img-Tv"/>
-    <v-lazy-image :src="shop" alt="" class="TheIndex_Img TheIndex_Img-Shop"/>
+    <a href="https://asilis.theshop.jp/"  class="">
+      <v-lazy-image :src="shop" alt="" class="TheIndex_Img TheIndex_Img-Shop"/>
+    </a>
   </div>
 </template>
 
@@ -31,33 +33,39 @@ export default {
 .TheIndex {
   width: 100%;
   height: 100%;
-  /* background: red; */
+  background: black;
   background: url("/bg.png");
   background-size: cover;
   background-position: center;
 }
 .TheIndex_Img-News{
   position: fixed;
-  top: 10%;
+  top: 5%;
   right: 20%;
-  width: 160px;
+  height: 30%;
+  /* width: 50%; */
 }
 .TheIndex_Img-Camereon{
   position: fixed;
   top: 30%;
   right: 0;
-  width: 160px;
+  height: 30%;
+  /* width: 40%; */
 }
 .TheIndex_Img-Shop{
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 280px;
+  height: 36%;
+  transform:rotate(-5deg);
+  /* width: 75%; */
 }
 .TheIndex_Img-Tv{
   position: fixed;
   top: 36%;
   left: -10%;
-  width: 220px;
+  height: 40%;
+  transform:rotate(10deg);
+  /* width: 60%; */
 }
 </style>
