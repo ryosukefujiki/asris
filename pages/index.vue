@@ -62,20 +62,20 @@ export default {
     })
   },
   watch: {
-    async clicked(val) {
-      console.log('hoge')
-      requestAnimationFrame(() => {
-        TweenMax.to(
-          ".TheIndex_BlackBg",
-          {
-            opacity: 1,
-            ease: Expo.easeIn,
-          },
-          0.4
-        );
-      });
-      await this.$delay(500);
-    }
+    // async clicked(val) {
+    //   console.log('hoge')
+    //   requestAnimationFrame(() => {
+    //     TweenMax.to(
+    //       ".TheIndex_BlackBg",
+    //       {
+    //         opacity: 1,
+    //         ease: Expo.easeIn,
+    //       },
+    //       0.4
+    //     );
+    //   });
+    //   await this.$delay(500);
+    // }
   }
 }
 </script>
@@ -121,7 +121,7 @@ export default {
 }
 
 .TheIndex_BlackBg{
-  opacity: 0;
+  /* opacity: 0; */
   transition: 0.2s;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1px);
