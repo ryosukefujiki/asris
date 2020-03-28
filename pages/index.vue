@@ -68,4 +68,41 @@ export default {
   transform:rotate(10deg);
   /* width: 60%; */
 }
+
+@media screen and (min-width: 481px){
+
+}
+@media screen and (min-width: 769px){
+.TheIndex_Img-News{
+  position: fixed;
+  top: 2%;
+  left: 30%;
+  height: 44%;
+  /* width: 50%; */
+}
+.TheIndex_Img-Camereon{
+  position: fixed;
+  top: -15%;
+  right: 0;
+  height: 64%;
+  /* transform:rotate(-45deg); */
+  /* width: 40%; */
+}
+.TheIndex_Img-Shop{
+  position: fixed;
+  bottom: 0;
+  right: 14%;
+  height: 52%;
+  transform:rotate(-5deg);
+  /* width: 75%; */
+}
+.TheIndex_Img-Tv{
+  position: fixed;
+  top: 40%;
+  left: 0;
+  height: 72%;
+  transform:rotate(10deg);
+  /* width: 60%; */
+}
+}
 </style>
