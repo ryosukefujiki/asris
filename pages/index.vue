@@ -21,7 +21,8 @@
 </template>
 
 <script>
-
+import {mapGetters} from 'vuex'
+import { TweenMax, Elastic, Expo, Back } from "gsap";
 import VLazyImage from "v-lazy-image"
 import Logo from '~/components/Logo.vue'
 
@@ -43,26 +44,39 @@ export default {
     }
   },
   mounted() {
-    // let self = this
-    // window.addEventListener("deviceorientation", function(e){
-    //   // alpha, beta, gammaの値を取得
-    //   // this.x_value = e.beta;
-    //   // this.y_value = e.gamma;
-    //   // this.z_value = e.alpha;
-    //   console.log(e.beta)
-    //   console.log(e.gamma)
-    //   console.log(e.alpha)
-    // // console.log(this.x_value)
-    // }, false);
+  
   },
   methods: {
     ThePlaylist_Clicked(){
+      this.$store.commit("playlist/click");
       this.playlist_flag = true
     },
     ThePlaylist_Closed(){
+      this.$store.commit("playlist/close");
       this.playlist_flag = false
     },
   },
+  computed: {
+    ...mapGetters({
+      clicked: 'playlist/clicked',
+    })
+  },
+  watch: {
+    async clicked(val) {
+      console.log('hoge')
+      requestAnimationFrame(() => {
+        TweenMax.to(
+          ".TheIndex_BlackBg",
+          {
+            opacity: 1,
+            ease: Expo.easeIn,
+          },
+          0.4
+        );
+      });
+      await this.$delay(500);
+    }
+  }
 }
 </script>
 
@@ -107,6 +121,7 @@ export default {
 }
 
 .TheIndex_BlackBg{
+  opacity: 0;
   transition: 0.2s;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1px);
