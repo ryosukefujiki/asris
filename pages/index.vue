@@ -1,5 +1,6 @@
 <template>
   <div class="TheIndex">
+    <div class="TheIndex_BlackBg" v-show="this.playlist_flag"></div>
     <v-lazy-image :src="news" alt="" class="TheIndex_Img TheIndex_Img-News"/>
     <a @click="ThePlaylist_Clicked">
       <v-lazy-image :src="camereon" alt="" class="TheIndex_Img TheIndex_Img-Camereon"/>
@@ -23,6 +24,7 @@
 
 import VLazyImage from "v-lazy-image"
 import Logo from '~/components/Logo.vue'
+
 
 export default {
   components: {
@@ -104,6 +106,17 @@ export default {
   /* width: 60%; */
 }
 
+.TheIndex_BlackBg{
+  transition: 0.2s;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
 .ThePlaylist_Wrapper{
   display: flex;
   flex-wrap: wrap;
