@@ -240,80 +240,81 @@ export default {
 
 }
 @media screen and (min-width: 769px){
-.TheIndex_Img-News{
-  position: fixed;
-  top: 2%;
-  left: 30%;
-  height: 44%;
-  /* width: 50%; */
-}
-.TheIndex_Img-Camereon{
-  position: fixed;
-  top: -15%;
-  right: 0;
-  height: 64%;
-  /* transform:rotate(-45deg); */
-  /* width: 40%; */
-}
-.TheIndex_Img-Shop{
-  position: fixed;
-  bottom: 0;
-  right: 14%;
-  height: 52%;
-  transform:rotate(-5deg);
-  /* width: 75%; */
-}
-.TheIndex_Img-Tv{
-  position: fixed;
-  top: 40%;
-  left: 0;
-  height: 72%;
-  transform:rotate(10deg);
-  /* width: 60%; */
-}
-
-
-
-.ThePlaylist_Wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  position: fixed;
-  bottom: 20px;
-  left: 0;
-  z-index: 20;
+.TheIndex {
   width: 100%;
+  height: 100%;
+  background: black;
+  background: url("/bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  padding-top: 120px;
 }
-.ThePlaylist_CloseBtn{
-  width: 28px;
-  height: 28px;
-  margin-left: 24px;
-  margin-bottom: 12px;
-  /* background: red; */
-  background-image: 
-  linear-gradient(-45deg, 
-    transparent calc(50% - 1px), #fff calc(50% - 1px), 
-    #fff calc(50% + 1px), transparent calc(50% + 1px)
-  ), 
-  linear-gradient(45deg, 
-    transparent calc(50% - 1px), #fff calc(50% - 1px), 
-    #fff calc(50% + 1px), transparent calc(50% + 1px)
-  );
-}
-.TheIndex_Playlist_Countainer{
-  padding-left: 12px;
-  padding-right: 12px;
-  /* f */
+.TheIndex_ColumnUpper_Box{
   display: flex;
-  /* justify-content: space-between; */
-  overflow-x: scroll;
-  /* overflow-y: visible; */
+  justify-content: space-between;
+  width: 100%;
+  height: 60%;
+  /* background: black; */
+}
+.TheIndex_ColumnBottom_Box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 35%;
+  /* background: black; */
+}
+.TheIndex_ColumnUpper_Left{
+  width: 45%;
+  height: 100%;
+  align-items: flex-end;
+}
+.TheIndex_Column_04{
+  width: 54%;
+  height: 100%;
+  background: url("/onlinestore.png");
+  background-size: cover;
+  border: 2px solid #000323;
+  background-position: left;
+}
+.TheIndex_Column_01{
+  width: 100%;
+  height: 30%;
+  background: url("/news.png");
+  background-size: cover;
+  border: 2px solid #000323;
+  background-position: center;
+}
+.TheIndex_Column_02{
+  width: 100%;
+  height: 30%;
+  background: url("/video.png");
+  background-size: cover;
+  margin-top: 2%;
+  border: 2px solid #000323;
+  background-position: right;
+}
+.TheIndex_Column_03{
+  width: 100%;
+  height: 30%;
+  background: url("/music.png");
+  background-size: cover;
+  margin-top: 2%;
+  border: 2px solid #000323;
+  background-position: center;
 }
 
-.TheIndex_Playlist{
-  width: 320px;
-  height: 280px;
-  margin-right: 24px;
+.TheIndex_Text{
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  font-size: 24px !important;
+  letter-spacing: 4px;
 }
+.TheIndex_Text_Small{
+  font-size: 24px !important;
+}
+
+
 
 }
 </style>

@@ -75,5 +75,16 @@ export default {
   height: 200px;
   margin-bottom: 24px;
 }
-
+@media screen and (min-width: 769px){
+  .TheMusic {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+  background-image: url("/music.png");
+  background-size: cover;
+  background-position: right;
+  background-blend-mode: multiply;
+  padding: 20% 20px;
+}
+}
 </style>
