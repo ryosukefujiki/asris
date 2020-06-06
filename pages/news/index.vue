@@ -132,5 +132,26 @@ export default {
   margin-top: 4px;
   text-decoration: underline;
 }
+@media screen and (min-width: 769px){
+.TheNews {
+  width: 960px;
+  height: 100%;
+  padding: 120px 0px;
+  margin: 0 auto;
+}
+.TheMusic_Playlist{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 24px;
+}
+.TheNews_Card{
+  width: 100%;
+  background: white;
+  margin-bottom: 24px;
+  padding: 12px;
+  border-radius: 2px;
+}
+}
+
 
 </style>

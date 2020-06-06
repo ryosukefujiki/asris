@@ -71,4 +71,13 @@ export default {
   letter-spacing: 4px;
 }
 
+@media screen and (min-width: 769px){
+.TheCrew {
+  width: 960px;
+  height: 100%;
+  padding: 120px 0px;
+  margin: 0 auto;
+}
+}
+
 </style>
