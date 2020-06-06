@@ -1,6 +1,23 @@
 <template>
   <div class="TheIndex">
-    <div class="TheIndex_BlackBg" v-show="this.playlist_flag"></div>
+    <div class="TheIndex_ColumnUpper_Box">
+      <div class="TheIndex_ColumnUpper_Left">
+        <div class="TheIndex_Column TheIndex_Column_01"></div>
+        <div class="TheIndex_Column TheIndex_Column_02"></div>
+        <div class="TheIndex_Column TheIndex_Column_03"></div>
+      </div>
+      <div class="TheIndex_Column TheIndex_Column_04"></div>
+    </div>
+     <div class="TheIndex_ColumnBottom_Box">
+      <div class="TheIndex_ColumnBottom_Left">
+        <div class="TheIndex_Column TheIndex_Column_05"></div>
+        <div class="TheIndex_Column TheIndex_Column_06"></div>
+      </div>
+      <div class="TheIndex_Column TheIndex_Column_07"></div>
+      <div class="TheIndex_Column TheIndex_Column_08"></div>
+    </div>
+    <!-- <h2 class="TheIndex_Text">MUSIC</h2> -->
+    <!-- <div class="TheIndex_BlackBg" v-show="this.playlist_flag"></div>
     <v-lazy-image :src="news" alt="" class="TheIndex_Img TheIndex_Img-News"/>
     <a @click="ThePlaylist_Clicked">
       <v-lazy-image :src="camereon" alt="" class="TheIndex_Img TheIndex_Img-Camereon"/>
@@ -16,7 +33,7 @@
         <iframe src="https://open.spotify.com/embed/artist/0EpMZDmiigjzkNNNBF3Hbp" class="TheIndex_Playlist" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         <iframe src="https://open.spotify.com/embed/artist/2CjSAJqzNhKwUeen9d0d0D" class="TheIndex_Playlist" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -88,7 +105,77 @@ export default {
   background: url("/bg.png");
   background-size: cover;
   background-position: center;
+  padding: 80px 20px;
 }
+.TheIndex_Text{
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+}
+
+
+.TheIndex_ColumnUpper_Box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.TheIndex_ColumnBottom_Box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.TheIndex_Column_01{
+  width: 180px;
+  height: 120px;
+  background: url("/news.png");
+  background-size: cover;
+}
+.TheIndex_Column_02{
+  width: 180px;
+  height: 120px;
+  background: url("/video.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+.TheIndex_Column_03{
+  width: 180px;
+  height: 120px;
+  background: url("/music.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+.TheIndex_Column_04{
+  width: 140px;
+  height: 400px;
+  background: url("/onlinestore.png");
+  background-size: cover;
+}
+.TheIndex_Column_05{
+  width: 140px;
+  height: 140px;
+  background: url("/playlists.png");
+  background-size: cover;
+}
+.TheIndex_Column_06{
+  width: 140px;
+  height: 80px;
+  background: url("/crew.png");
+  background-size: cover;
+  margin-top: 20px;
+}
+.TheIndex_Column_07{
+  width: 100px;
+  height: 200px;
+  background: url("/familystance.png");
+  background-size: cover;
+}
+.TheIndex_Column_08{
+  width: 80px;
+  height: 200px;
+  background: url("/live.png");
+  background-size: cover;
+}
+
 .TheIndex_Img-News{
   position: fixed;
   top: 5%;

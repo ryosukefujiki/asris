@@ -40,7 +40,13 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    ['nuxt-webfontloader']
   ],
+  webfontloader: {
+    google: {
+      families: ['=Playfair+Display:wght@600']
+    }
+  },
   /*
   ** Build configuration
   */
