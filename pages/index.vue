@@ -26,17 +26,16 @@
           <h2 class="TheIndex_Text TheIndex_Text_Small">CREW</h2>
         </nuxt-link>
       </div>
-     <nuxt-link to="/crew" class="TheIndex_Column TheIndex_Column_07">
+     <nuxt-link to="/familystance" class="TheIndex_Column TheIndex_Column_07">
           <h2 class="TheIndex_Text TheIndex_Text_Small">FAMILY<br>STANCE</h2>
         </nuxt-link>
-     <nuxt-link to="/crew" class="TheIndex_Column TheIndex_Column_08">
+     <nuxt-link to="/live" class="TheIndex_Column TheIndex_Column_08">
           <h2 class="TheIndex_Text TheIndex_Text_Small">LIVE</h2>
         </nuxt-link>
     </div>
 
-    <!-- <h2 class="TheIndex_Text">MUSIC</h2> -->
-    <!-- <div class="TheIndex_BlackBg" v-show="this.playlist_flag"></div>
-    <v-lazy-image :src="news" alt="" class="TheIndex_Img TheIndex_Img-News"/>
+    
+    <!-- <v-lazy-image :src="news" alt="" class="TheIndex_Img TheIndex_Img-News"/>
     <a @click="ThePlaylist_Clicked">
       <v-lazy-image :src="camereon" alt="" class="TheIndex_Img TheIndex_Img-Camereon"/>
     </a>
@@ -51,7 +50,7 @@
         <iframe src="https://open.spotify.com/embed/artist/0EpMZDmiigjzkNNNBF3Hbp" class="TheIndex_Playlist" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         <iframe src="https://open.spotify.com/embed/artist/2CjSAJqzNhKwUeen9d0d0D" class="TheIndex_Playlist" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
-    </div> -->
+    </div>  -->
   </div>
 </template>
 
@@ -235,91 +234,6 @@ export default {
   align-items: center;
   text-decoration: none;
 }
-
-.TheIndex_Img-News{
-  position: fixed;
-  top: 5%;
-  right: 20%;
-  height: 30%;
-  /* width: 50%; */
-}
-.TheIndex_Img-Camereon{
-  position: fixed;
-  top: 30%;
-  right: 0;
-  height: 30%;
-  /* width: 40%; */
-}
-.TheIndex_Img-Shop{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 36%;
-  transform:rotate(-5deg);
-  /* width: 75%; */
-}
-.TheIndex_Img-Tv{
-  position: fixed;
-  top: 36%;
-  left: 0;
-  height: 40%;
-  transform:rotate(10deg);
-  /* width: 60%; */
-}
-
-.TheIndex_BlackBg{
-  /* opacity: 0; */
-  transition: 0.2s;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(1px);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 15;
-}
-.ThePlaylist_Wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  position: fixed;
-  bottom: 20px;
-  left: 0;
-  z-index: 20;
-  width: 100%;
-}
-.ThePlaylist_CloseBtn{
-  width: 28px;
-  height: 28px;
-  margin-left: 24px;
-  margin-bottom: 12px;
-  /* background: red; */
-  background-image: 
-  linear-gradient(-45deg, 
-    transparent calc(50% - 1px), #fff calc(50% - 1px), 
-    #fff calc(50% + 1px), transparent calc(50% + 1px)
-  ), 
-  linear-gradient(45deg, 
-    transparent calc(50% - 1px), #fff calc(50% - 1px), 
-    #fff calc(50% + 1px), transparent calc(50% + 1px)
-  );
-}
-.TheIndex_Playlist_Countainer{
-  padding-left: 12px;
-  padding-right: 12px;
-  /* f */
-  display: flex;
-  /* justify-content: space-between; */
-  overflow-x: scroll;
-  /* overflow-y: visible; */
-}
-
-.TheIndex_Playlist{
-  width: 240px;
-  height: 200px;
-  margin-right: 24px;
-}
-
 
 
 @media screen and (min-width: 481px){
