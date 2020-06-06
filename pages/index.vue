@@ -33,24 +33,6 @@
           <h2 class="TheIndex_Text TheIndex_Text_Small">LIVE</h2>
         </nuxt-link>
     </div>
-
-    
-    <!-- <v-lazy-image :src="news" alt="" class="TheIndex_Img TheIndex_Img-News"/>
-    <a @click="ThePlaylist_Clicked">
-      <v-lazy-image :src="camereon" alt="" class="TheIndex_Img TheIndex_Img-Camereon"/>
-    </a>
-    <v-lazy-image :src="tv" alt="" class="TheIndex_Img TheIndex_Img-Tv"/>
-    <a href="https://asilis.theshop.jp/"  class="">
-      <v-lazy-image :src="shop" alt="" class="TheIndex_Img TheIndex_Img-Shop"/>
-    </a>
-    <div class="ThePlaylist_Wrapper">
-      <div class="ThePlaylist_CloseBtn" v-show="this.playlist_flag" @click="ThePlaylist_Closed"></div>
-      <div class="TheIndex_Playlist_Countainer" v-show="this.playlist_flag">
-        <iframe src="https://open.spotify.com/embed/album/6BpM79A5kpFetdC9lVRCJy" class="TheIndex_Playlist" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe src="https://open.spotify.com/embed/artist/0EpMZDmiigjzkNNNBF3Hbp" class="TheIndex_Playlist" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe src="https://open.spotify.com/embed/artist/2CjSAJqzNhKwUeen9d0d0D" class="TheIndex_Playlist" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </div>
-    </div>  -->
   </div>
 </template>
 
@@ -118,10 +100,10 @@ export default {
 .TheIndex {
   width: 100%;
   height: 100%;
-  background: black;
+  /* background: black;
   background: url("/bg.png");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   padding: 20% 20px;
 }
 

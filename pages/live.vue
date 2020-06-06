@@ -16,6 +16,11 @@ export default {
   components: {
     VLazyImage
   },
+   head: {
+    bodyAttrs: {
+      class: 'body_live'
+    }
+  },
   data() {
     return {
       
@@ -38,13 +43,13 @@ export default {
 
 <style>
 .TheLive {
-   width: 100%;
+  width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.2);
+  /* background-color: rgba(0,0,0,0.2);
   background-image: url("/live.png");
   background-size: cover;
   background-position: center;
-  background-blend-mode: multiply;
+  background-blend-mode: multiply; */
   padding: 20% 20px;
 }
 

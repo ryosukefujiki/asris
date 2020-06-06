@@ -22,13 +22,18 @@ export default {
   components: {
     VLazyImage
   },
+  head: {
+    bodyAttrs: {
+      class: 'body_music'
+    }
+  },
   data() {
     return {
       
     }
   },
   mounted() {
-  
+
   },
   methods: {
    
@@ -43,13 +48,22 @@ export default {
 </script>
 
 <style>
-.TheMusic {
-  width: 100%;
+/* body{
   background-color: rgba(0,0,0,0.2);
   background-image: url("/music.png");
   background-size: cover;
   background-position: right;
   background-blend-mode: multiply;
+  background-attachment: fixed
+
+} */
+.TheMusic {
+  width: 100%;
+  /* background-color: rgba(0,0,0,0.2); */
+  /* background-image: url("/music.png");
+  background-size: cover;
+  background-position: right;
+  background-blend-mode: multiply; */
   padding: 20% 20px;
 }
 
@@ -69,6 +83,7 @@ export default {
   font-size: 32px;
   z-index: 5;
   letter-spacing: 4px;
+   margin-bottom: 12px;
 }
 .TheMusic_Playlist{
   width: 100%;

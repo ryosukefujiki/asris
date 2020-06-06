@@ -65,18 +65,52 @@ html,body, #__nuxt, #__layout, .default{
   background-size: cover;
   background-position: center; */
 }
-body{
-  background: black;
-  /* background: url("/bg.png");
-  background-size: cover;
-  background-position: center; */
-}
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
 }
+
+body{
+  background-color: rgba(0,0,0,0.2);
+  background-image: url("/bg.png");
+  background-size: cover;
+  background-position: right;
+  background-blend-mode: multiply;
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+}
+.body_music{
+  background-image: url("/music.png");
+}
+.body_news{
+  background-image: url("/news.png");
+}
+.body_video{
+  background-image: url("/video.png");
+  background-position: center;
+}
+.body_live{
+  background-image: url("/live.png");
+  background-position: center;
+}
+.body_familystance{
+  background-image: url("/familystance.png");
+  background-position: center;
+}
+.body_crew{
+  background-image: url("/crew.png");
+  background-position: center;
+}
+.body_playlist{
+  background-image: url("/playlists.png");
+  background-position: center;
+}
+.body_news_detail{
+  background: #ffffff;
+}
+
 
 .button--green {
   display: inline-block;

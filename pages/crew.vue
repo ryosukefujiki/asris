@@ -16,6 +16,11 @@ export default {
   components: {
     VLazyImage
   },
+   head: {
+    bodyAttrs: {
+      class: 'body_crew'
+    }
+  },
   data() {
     return {
       
@@ -40,11 +45,11 @@ export default {
 .TheCrew {
    width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.2);
+  /* background-color: rgba(0,0,0,0.2);
   background-image: url("/crew.png");
   background-size: cover;
   background-position: right;
-  background-blend-mode: multiply;
+  background-blend-mode: multiply; */
   padding: 20% 20px;
 }
 

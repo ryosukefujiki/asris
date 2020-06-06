@@ -21,6 +21,11 @@ export default {
       
     }
   },
+   head: {
+    bodyAttrs: {
+      class: 'body_playlist'
+    }
+  },
   mounted() {
   
   },
@@ -40,11 +45,11 @@ export default {
 .ThePlaylist {
    width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.2);
+  /* background-color: rgba(0,0,0,0.2);
   background-image: url("/playlists.png");
   background-size: cover;
   background-position: center;
-  background-blend-mode: multiply;
+  background-blend-mode: multiply; */
   padding: 20% 20px;
 }
 

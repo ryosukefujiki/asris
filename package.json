@@ -11,6 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@contentful/rich-text-html-renderer": "^13.4.0",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "contentful": "^7.14.4",
     "gsap": "^3.2.6",
     "nuxt": "^2.0.0",
     "nuxt-webfontloader": "^1.1.0",
