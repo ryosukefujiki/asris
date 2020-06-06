@@ -3,13 +3,13 @@
     <div class="TheIndex_ColumnUpper_Box">
       <div class="TheIndex_ColumnUpper_Left">
         <nuxt-link to="/news" class="TheIndex_Column TheIndex_Column_01">
-          <h2 class="TheIndex_Text">NEWS</h2>
+          <h2 class="TheIndex_Text Text_Left">NEWS</h2>
         </nuxt-link>
         <nuxt-link to="/videos" class="TheIndex_Column TheIndex_Column_02">
-          <h2 class="TheIndex_Text">VIDEOS</h2>
+          <h2 class="TheIndex_Text Text_Right">VIDEOS</h2>
         </nuxt-link>
          <nuxt-link to="/music" class="TheIndex_Column TheIndex_Column_03">
-          <h2 class="TheIndex_Text">MUSIC</h2>
+          <h2 class="TheIndex_Text Text_Left">MUSIC</h2>
         </nuxt-link>
       </div>
       <a href="https://restless-fog-190.stores.jp/" target="_blank" class="TheIndex_Column TheIndex_Column_04">
@@ -135,6 +135,7 @@ export default {
 .TheIndex_Text_Small{
   font-size: 14px;
 }
+
 
 
 .TheIndex_ColumnUpper_Box{
