@@ -2,15 +2,15 @@
   <div class="TheIndex">
     <div class="TheIndex_ColumnUpper_Box">
       <div class="TheIndex_ColumnUpper_Left">
-        <div class="TheIndex_Column TheIndex_Column_01">
+        <nuxt-link to="/news" class="TheIndex_Column TheIndex_Column_01">
           <h2 class="TheIndex_Text">NEWS</h2>
-        </div>
-        <div class="TheIndex_Column TheIndex_Column_02">
+        </nuxt-link>
+        <nuxt-link to="/videos" class="TheIndex_Column TheIndex_Column_02">
           <h2 class="TheIndex_Text">VIDEOS</h2>
-        </div>
-        <div class="TheIndex_Column TheIndex_Column_03">
+        </nuxt-link>
+         <nuxt-link to="/music" class="TheIndex_Column TheIndex_Column_03">
           <h2 class="TheIndex_Text">MUSIC</h2>
-        </div>
+        </nuxt-link>
       </div>
       <a href="https://restless-fog-190.stores.jp/" target="_blank" class="TheIndex_Column TheIndex_Column_04">
         <h2 class="TheIndex_Text">ONLINE<br>STORE</h2>
@@ -19,19 +19,19 @@
     
      <div class="TheIndex_ColumnBottom_Box">
       <div class="TheIndex_ColumnBottom_Left">
-        <div class="TheIndex_Column TheIndex_Column_05">
+        <nuxt-link to="/playlist" class="TheIndex_Column TheIndex_Column_05">
           <h2 class="TheIndex_Text TheIndex_Text_Small">PLAYLIST<br>&<br>PHOTO</h2>
-        </div>
-        <div class="TheIndex_Column TheIndex_Column_06">
+        </nuxt-link>
+         <nuxt-link to="/crew" class="TheIndex_Column TheIndex_Column_06">
           <h2 class="TheIndex_Text TheIndex_Text_Small">CREW</h2>
-        </div>
+        </nuxt-link>
       </div>
-      <div class="TheIndex_Column TheIndex_Column_07">
-        <h2 class="TheIndex_Text TheIndex_Text_Small">FAMILY<br> STANCE</h2>
-      </div>
-      <div class="TheIndex_Column TheIndex_Column_08">
-        <h2 class="TheIndex_Text TheIndex_Text_Small">LIVE</h2>
-      </div>
+     <nuxt-link to="/crew" class="TheIndex_Column TheIndex_Column_07">
+          <h2 class="TheIndex_Text TheIndex_Text_Small">FAMILY<br>STANCE</h2>
+        </nuxt-link>
+     <nuxt-link to="/crew" class="TheIndex_Column TheIndex_Column_08">
+          <h2 class="TheIndex_Text TheIndex_Text_Small">LIVE</h2>
+        </nuxt-link>
     </div>
 
     <!-- <h2 class="TheIndex_Text">MUSIC</h2> -->
@@ -172,7 +172,7 @@ export default {
   background-size: cover;
   margin-top: 4%;
   border: 2px solid #000323;
-  background-position: center;
+  background-position: right;
 }
 .TheIndex_Column_03{
   width: 100%;
