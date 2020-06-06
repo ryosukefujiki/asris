@@ -2,20 +2,38 @@
   <div class="TheIndex">
     <div class="TheIndex_ColumnUpper_Box">
       <div class="TheIndex_ColumnUpper_Left">
-        <div class="TheIndex_Column TheIndex_Column_01"></div>
-        <div class="TheIndex_Column TheIndex_Column_02"></div>
-        <div class="TheIndex_Column TheIndex_Column_03"></div>
+        <div class="TheIndex_Column TheIndex_Column_01">
+          <h2 class="TheIndex_Text">NEWS</h2>
+        </div>
+        <div class="TheIndex_Column TheIndex_Column_02">
+          <h2 class="TheIndex_Text">VIDEOS</h2>
+        </div>
+        <div class="TheIndex_Column TheIndex_Column_03">
+          <h2 class="TheIndex_Text">MUSIC</h2>
+        </div>
       </div>
-      <div class="TheIndex_Column TheIndex_Column_04"></div>
+      <a href="https://restless-fog-190.stores.jp/" target="_blank" class="TheIndex_Column TheIndex_Column_04">
+        <h2 class="TheIndex_Text">ONLINE<br>STORE</h2>
+      </a>
     </div>
+    
      <div class="TheIndex_ColumnBottom_Box">
       <div class="TheIndex_ColumnBottom_Left">
-        <div class="TheIndex_Column TheIndex_Column_05"></div>
-        <div class="TheIndex_Column TheIndex_Column_06"></div>
+        <div class="TheIndex_Column TheIndex_Column_05">
+          <h2 class="TheIndex_Text TheIndex_Text_Small">PLAYLIST<br>&<br>PHOTO</h2>
+        </div>
+        <div class="TheIndex_Column TheIndex_Column_06">
+          <h2 class="TheIndex_Text TheIndex_Text_Small">CREW</h2>
+        </div>
       </div>
-      <div class="TheIndex_Column TheIndex_Column_07"></div>
-      <div class="TheIndex_Column TheIndex_Column_08"></div>
+      <div class="TheIndex_Column TheIndex_Column_07">
+        <h2 class="TheIndex_Text TheIndex_Text_Small">FAMILY<br> STANCE</h2>
+      </div>
+      <div class="TheIndex_Column TheIndex_Column_08">
+        <h2 class="TheIndex_Text TheIndex_Text_Small">LIVE</h2>
+      </div>
     </div>
+
     <!-- <h2 class="TheIndex_Text">MUSIC</h2> -->
     <!-- <div class="TheIndex_BlackBg" v-show="this.playlist_flag"></div>
     <v-lazy-image :src="news" alt="" class="TheIndex_Img TheIndex_Img-News"/>
@@ -105,11 +123,17 @@ export default {
   background: url("/bg.png");
   background-size: cover;
   background-position: center;
-  padding: 80px 20px;
+  padding: 20% 20px;
 }
+
 .TheIndex_Text{
   font-family: 'Playfair Display', serif;
   color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.TheIndex_Text_Small{
+  font-size: 14px;
 }
 
 
@@ -117,63 +141,98 @@ export default {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 60%;
+  /* background: black; */
 }
+.TheIndex_ColumnUpper_Left{
+  width: 55%;
+  height: 100%;
+  align-items: flex-end;
+}
+.TheIndex_Column_04{
+  width: 40%;
+  height: 100%;
+  background: url("/onlinestore.png");
+  background-size: cover;
+  border: 2px solid #000323;
+  background-position: left;
+}
+.TheIndex_Column_01{
+  width: 100%;
+  height: 32%;
+  background: url("/news.png");
+  background-size: cover;
+  border: 2px solid #000323;
+  background-position: center;
+}
+.TheIndex_Column_02{
+  width: 100%;
+  height: 32%;
+  background: url("/video.png");
+  background-size: cover;
+  margin-top: 4%;
+  border: 2px solid #000323;
+  background-position: center;
+}
+.TheIndex_Column_03{
+  width: 100%;
+  height: 32%;
+  background: url("/music.png");
+  background-size: cover;
+  margin-top: 4%;
+  border: 2px solid #000323;
+  background-position: center;
+}
+
 .TheIndex_ColumnBottom_Box{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 40%;
   margin-top: 20px;
 }
-.TheIndex_Column_01{
-  width: 180px;
-  height: 120px;
-  background: url("/news.png");
-  background-size: cover;
-}
-.TheIndex_Column_02{
-  width: 180px;
-  height: 120px;
-  background: url("/video.png");
-  background-size: cover;
-  margin-top: 20px;
-}
-.TheIndex_Column_03{
-  width: 180px;
-  height: 120px;
-  background: url("/music.png");
-  background-size: cover;
-  margin-top: 20px;
-}
-.TheIndex_Column_04{
-  width: 140px;
-  height: 400px;
-  background: url("/onlinestore.png");
-  background-size: cover;
+.TheIndex_ColumnBottom_Left{
+  width: 40%;
+  height: 100%;
 }
 .TheIndex_Column_05{
-  width: 140px;
-  height: 140px;
+  width: 100%;
+  height: 60%;
   background: url("/playlists.png");
   background-size: cover;
+  border: 2px solid #000323;
+  background-position: center;
 }
 .TheIndex_Column_06{
-  width: 140px;
-  height: 80px;
+  width: 100%;
+  height: 30%;
   background: url("/crew.png");
   background-size: cover;
   margin-top: 20px;
+  border: 2px solid #000323;
+  background-position: center;
 }
 .TheIndex_Column_07{
-  width: 100px;
-  height: 200px;
+  width: 30%;
+  height: 100%;
   background: url("/familystance.png");
   background-size: cover;
+  border: 2px solid #000323;
+  background-position: center;
 }
 .TheIndex_Column_08{
-  width: 80px;
-  height: 200px;
+  width: 25%;
+  height: 100%;
   background: url("/live.png");
   background-size: cover;
+  border: 2px solid #000323;
+}
+
+.TheIndex_Column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .TheIndex_Img-News{
