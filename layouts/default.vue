@@ -74,7 +74,7 @@ html,body, #__nuxt, #__layout, .default{
 
 body{
   background-color: rgba(0,0,0,0.2);
-  background-image: url("/bg.png");
+  background-image: url("/bg_new.png");
   background-size: cover;
   background-position: right;
   background-blend-mode: multiply;
