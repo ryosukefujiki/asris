@@ -17,7 +17,7 @@
       </div>
     </template>
     <template v-else>
-      <p class="TheIndex_Text">COMING SOON.</p>
+      <p class="TheDetail_Text">COMING SOON.</p>
     </template>
   </div>
 </template>
@@ -35,11 +35,12 @@ export default {
   },
   async asyncData({ env }) {
     let posts = []
-    await client.getEntries({
-      content_type: env.CTF_BLOG_POST_TYPE_ID,
-      order: '-fields.newsDate'
-    }).then(res => (posts = res.items)).catch(console.error)
-    return { posts }
+    return{ posts }
+    // await client.getEntries({
+    //   content_type: env.CTF_BLOG_POST_TYPE_ID,
+    //   order: '-fields.newsDate'
+    // }).then(res => (posts = res.items)).catch(console.error)
+    // return { posts }
   },
   data() {
     return {
@@ -77,13 +78,13 @@ export default {
 }
 
 
-.TheIndex_Text{
+.TheDetail_Text{
   font-family: 'Playfair Display', serif;
   color: #ffffff;
   font-size: 20px;
   letter-spacing: 4px;
 }
-.TheIndex_Text_Small{
+.TheDetail_Text_Small{
   font-size: 14px;
 }
 .TheIndex_Heading{

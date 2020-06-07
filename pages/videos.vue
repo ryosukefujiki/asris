@@ -1,7 +1,9 @@
 <template>
   <div class="TheVideos">
     <h1 class="TheIndex_Heading">VIDEOS</h1>
-    <p class="TheIndex_Text">COMING SOON.</p>
+    <a target="_blank" href="https://www.youtube.com/channel/UCxma0t4yQQIMZ1Crm39judQ?view_as=subscriber" class="TheDetail_Text">
+      ASILIS YOUTUBE CHANNEL
+    </a>
   </div>
 </template>
 
@@ -64,13 +66,14 @@ export default {
 } */
 
 
-.TheIndex_Text{
+.TheDetail_Text{
   font-family: 'Playfair Display', serif;
   color: #ffffff;
   font-size: 20px;
   letter-spacing: 4px;
+  
 }
-.TheIndex_Text_Small{
+.TheDetail_Text_Small{
   font-size: 14px;
 }
 .TheIndex_Heading{

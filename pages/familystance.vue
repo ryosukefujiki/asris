@@ -1,7 +1,15 @@
 <template>
   <div class="TheFamily">
     <h1 class="TheIndex_Heading">FAMILY STANCE</h1>
-    <p class="TheIndex_Text">COMING SOON.</p>
+    <a target="_blank" href="https://www.perimetron.jp/" class="TheDetail_Text">
+      PERIMETRON
+    </a>
+    <a target="_blank" href="https://www.dirtyworkersstudio.com/" class="TheDetail_Text">
+      DWS
+    </a>
+    <a target="_blank" href="http://www.margtstudio.com/" class="TheDetail_Text">
+      Margt
+    </a>
   </div>
 </template>
 
@@ -54,13 +62,15 @@ export default {
 }
 
 
-.TheIndex_Text{
+.TheDetail_Text{
   font-family: 'Playfair Display', serif;
   color: #ffffff;
   font-size: 20px;
   letter-spacing: 4px;
+  display: block;
+  margin-bottom: 24px;
 }
-.TheIndex_Text_Small{
+.TheDetail_Text_Small{
   font-size: 14px;
 }
 .TheIndex_Heading{
@@ -69,6 +79,7 @@ export default {
   font-size: 32px;
   z-index: 5;
   letter-spacing: 4px;
+  margin-bottom: 12px;
 }
 @media screen and (min-width: 769px){
 .TheFamily {

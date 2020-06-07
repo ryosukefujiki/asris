@@ -1,7 +1,7 @@
 <template>
   <div class="TheLive">
     <h1 class="TheIndex_Heading">LIVE</h1>
-    <p class="TheIndex_Text">COMING SOON.</p>
+    <p class="TheDetail_Text">COMING SOON.</p>
   </div>
 </template>
 
@@ -54,13 +54,13 @@ export default {
 }
 
 
-.TheIndex_Text{
+.TheDetail_Text{
   font-family: 'Playfair Display', serif;
   color: #ffffff;
   font-size: 20px;
   letter-spacing: 4px;
 }
-.TheIndex_Text_Small{
+.TheDetail_Text_Small{
   font-size: 14px;
 }
 .TheIndex_Heading{

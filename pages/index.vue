@@ -208,6 +208,7 @@ export default {
   height: 100%;
   background: url("/live_sp.png");
   background-size: cover;
+  background-position: center;
   border: 2px solid #000323;
 }
 
@@ -292,6 +293,7 @@ export default {
   color: #ffffff;
   font-size: 24px !important;
   letter-spacing: 4px;
+  display: block;
 }
 .TheIndex_Text_Small{
   font-size: 24px !important;
