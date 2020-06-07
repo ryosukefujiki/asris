@@ -128,7 +128,7 @@ export default {
   /* background: black; */
 }
 .TheIndex_ColumnUpper_Left{
-  width: 55%;
+  width: 58%;
   height: 100%;
   align-items: flex-end;
 }
@@ -142,7 +142,7 @@ export default {
 }
 .TheIndex_Column_01{
   width: 100%;
-  height: 30%;
+  height: 29%;
   background: url("/news_sp.png");
   background-size: cover;
   border: 2px solid #000323;
@@ -150,7 +150,7 @@ export default {
 }
 .TheIndex_Column_02{
   width: 100%;
-  height: 30%;
+  height: 29%;
   background: url("/video_sp.png");
   background-size: cover;
   margin-top: 4%;
@@ -159,7 +159,7 @@ export default {
 }
 .TheIndex_Column_03{
   width: 100%;
-  height: 30%;
+  height: 29%;
   background: url("/music_sp.png");
   background-size: cover;
   margin-top: 4%;
@@ -171,7 +171,7 @@ export default {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 40%;
+  height: 38%;
   margin-top: 20px;
 }
 .TheIndex_ColumnBottom_Left{
@@ -180,7 +180,7 @@ export default {
 }
 .TheIndex_Column_05{
   width: 100%;
-  height: 60%;
+  height: 50%;
   background: url("/playlists_sp.png");
   background-size: cover;
   border: 2px solid #000323;
