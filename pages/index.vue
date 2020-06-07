@@ -112,6 +112,7 @@ export default {
   color: #ffffff;
   font-size: 20px;
   letter-spacing: 4px;
+  display: none;
 }
 .TheIndex_Text_Small{
   font-size: 14px;
@@ -134,23 +135,23 @@ export default {
 .TheIndex_Column_04{
   width: 40%;
   height: 100%;
-  background: url("/onlinestore.png");
-  background-size: cover;
-  border: 2px solid #000323;
-  background-position: left;
-}
-.TheIndex_Column_01{
-  width: 100%;
-  height: 32%;
-  background: url("/news.png");
+  background: url("/onlinestore_sp.png");
   background-size: cover;
   border: 2px solid #000323;
   background-position: center;
 }
+.TheIndex_Column_01{
+  width: 100%;
+  height: 30%;
+  background: url("/news_sp.png");
+  background-size: cover;
+  border: 2px solid #000323;
+  background-position: left;
+}
 .TheIndex_Column_02{
   width: 100%;
-  height: 32%;
-  background: url("/video.png");
+  height: 30%;
+  background: url("/video_sp.png");
   background-size: cover;
   margin-top: 4%;
   border: 2px solid #000323;
@@ -158,12 +159,12 @@ export default {
 }
 .TheIndex_Column_03{
   width: 100%;
-  height: 32%;
-  background: url("/music.png");
+  height: 30%;
+  background: url("/music_sp.png");
   background-size: cover;
   margin-top: 4%;
   border: 2px solid #000323;
-  background-position: center;
+  background-position: left;
 }
 
 .TheIndex_ColumnBottom_Box{
@@ -180,7 +181,7 @@ export default {
 .TheIndex_Column_05{
   width: 100%;
   height: 60%;
-  background: url("/playlists.png");
+  background: url("/playlists_sp.png");
   background-size: cover;
   border: 2px solid #000323;
   background-position: center;
@@ -188,7 +189,7 @@ export default {
 .TheIndex_Column_06{
   width: 100%;
   height: 30%;
-  background: url("/crew.png");
+  background: url("/crew_sp.png");
   background-size: cover;
   margin-top: 20px;
   border: 2px solid #000323;
@@ -197,7 +198,7 @@ export default {
 .TheIndex_Column_07{
   width: 30%;
   height: 100%;
-  background: url("/familystance.png");
+  background: url("/familystance_sp.png");
   background-size: cover;
   border: 2px solid #000323;
   background-position: center;
@@ -205,7 +206,7 @@ export default {
 .TheIndex_Column_08{
   width: 25%;
   height: 100%;
-  background: url("/live.png");
+  background: url("/live_sp.png");
   background-size: cover;
   border: 2px solid #000323;
 }
@@ -296,6 +297,31 @@ export default {
   font-size: 24px !important;
 }
 
+.TheIndex_Column_05{
+  width: 100%;
+  height: 60%;
+  background: url("/playlists.png");
+  background-size: cover;
+  border: 2px solid #000323;
+  background-position: center;
+}
+.TheIndex_Column_06{
+  width: 100%;
+  height: 30%;
+  background: url("/crew.png");
+  background-size: cover;
+  margin-top: 20px;
+  border: 2px solid #000323;
+  background-position: center;
+}
+.TheIndex_Column_07{
+  width: 30%;
+  height: 100%;
+  background: url("/familystance.png");
+  background-size: cover;
+  border: 2px solid #000323;
+  background-position: center;
+}
 
 
 }
