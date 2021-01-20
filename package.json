@@ -14,7 +14,7 @@
     "@contentful/rich-text-html-renderer": "^13.4.0",
     "@nuxtjs/dotenv": "^1.4.1",
     "contentful": "^7.14.4",
-    "gsap": "^3.2.6",
+    "gsap": "^3.6.0",
     "nuxt": "^2.0.0",
     "nuxt-webfontloader": "^1.1.0",
     "v-lazy-image": "^1.4.0"
